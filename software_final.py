@@ -83,7 +83,7 @@ def listar_alunos():
     cursor = conn.cursor()
     cursor.execute("SELECT * FROM vw_Alunos_Global")
     for a in cursor.fetchall():
-        print(f"ID: {a[0]} | Nome: {a[1]} | Sexo: {a[2]} | Campus: {a[3]}")
+        print(f"ID: {a[0]} | Nome: {a[1]} | Sexo: {a[2]} | Campus: {a[4]}")
     conn.close()
 
 def listar_disciplinas():
